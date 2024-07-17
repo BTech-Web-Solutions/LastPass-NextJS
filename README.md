@@ -1,0 +1,1 @@
+# Next.js Chrome Extension Starter  🚀  
