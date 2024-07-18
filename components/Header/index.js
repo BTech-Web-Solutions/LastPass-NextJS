@@ -1,7 +1,7 @@
 export default function Header() {
   return (
     <>
-      <p>Header / Menu / Navigation</p>
+      <h1>Header</h1>
     </>
   );
 }
