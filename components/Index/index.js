@@ -1,7 +1,8 @@
-import { useEffect, useState } from "react";
+import { useContext, useEffect, useState } from "react";
+import AppContext from "../../contexts/appContext";
 
 export default function Index({ navigateToPage }) {
-  const [currentUrl, setCurrentUrl] = useState("");
+  const { currentUrl, setCurrentUrl } = useContext(AppContext);
 
   useEffect(() => {
     chrome.tabs.query({ active: true, currentWindow: true }, (tabs) => {
