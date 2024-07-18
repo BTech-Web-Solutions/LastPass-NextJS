@@ -10,9 +10,9 @@ export default function Home() {
   };
 
   return (
-    <>
+    <div>
       {activePage === "index" && <Index navigateToPage={navigateToPage} />}
       {activePage === "new" && <New navigateToPage={navigateToPage} />}
-    </>
+    </div>
   );
 }
