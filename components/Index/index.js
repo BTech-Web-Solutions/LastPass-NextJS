@@ -3,12 +3,12 @@ import { useEffect, useState } from "react";
 export default function Index({ navigateToPage }) {
   const [currentUrl, setCurrentUrl] = useState("");
 
-  // useEffect(() => {
-  //   chrome.tabs.query({ active: true, currentWindow: true }, (tabs) => {
-  //     const activeTab = tabs[0];
-  //     setCurrentUrl(activeTab.url);
-  //   });
-  // }, []);
+  useEffect(() => {
+    chrome.tabs.query({ active: true, currentWindow: true }, (tabs) => {
+      const activeTab = tabs[0];
+      setCurrentUrl(activeTab.url);
+    });
+  }, []);
 
   return (
     <div>
